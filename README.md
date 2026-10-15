@@ -1,74 +1,68 @@
-# 🏦 Bank Customer Accounts Overview – SQL Analytics Project
+# Banking Customer Accounts — SQL Analytics Project
 
-## 📌 Project Overview
-This project demonstrates the application of SQL in analyzing banking data and generating meaningful business insights. The database consists of four core entities: **Customers, Accounts, Transactions, and Loans**, connected through relational database concepts.
+A SQL Server portfolio project that uses relational banking-style data to answer customer, account, transaction, and loan questions. The project includes **17 SQL queries** covering common reporting and analytical patterns.
 
-By solving real-world banking scenarios, this project showcases proficiency in data retrieval, analysis, and reporting using SQL.
+## Project Overview
 
----
+The script creates four related tables:
 
-## 🎯 Key Objectives
-- Analyze customer account information
-- Track transaction activities and patterns
-- Evaluate loan-related data
-- Generate business insights from banking records
-- Apply advanced SQL techniques for analytics
+- `Customers` — customer and account profile information
+- `Accounts` — account balances and opening dates
+- `Transactions` — transaction types, amounts, and dates
+- `Loans` — loan amounts and categories
 
----
+The project is designed to demonstrate how SQL can turn structured records into answers to practical business questions.
 
-## 🛠️ Technologies Used
+## Technology
+
 - Microsoft SQL Server
 - SQL Server Management Studio (SSMS)
+- T-SQL
 
----
+## SQL Concepts Demonstrated
 
-## 💡 SQL Concepts Demonstrated
-✔️ Joins (INNER JOIN, LEFT JOIN)
+- `INNER JOIN` and `LEFT JOIN`
+- `GROUP BY`, `HAVING`, and aggregate functions
+- Subqueries and filtering against calculated values
+- Ranking with `RANK()` and `DENSE_RANK()`
+- Window functions including `LAG()` and `LEAD()`
+- Running totals and transaction analysis
 
-✔️ Aggregate Functions (SUM, COUNT, AVG, MIN, MAX)
+## Example Business Questions
 
-✔️ GROUP BY & HAVING
+- Which customers have the highest account balances?
+- What are the total deposited and withdrawn amounts by transaction type?
+- Which customers have taken loans?
+- Which customers have not taken a loan?
+- How much transaction activity is associated with each customer?
+- How do customers rank by balance or transaction activity?
 
-✔️ Subqueries
+## How to Run
 
-✔️ Window Functions
+1. Install [SQL Server](https://www.microsoft.com/sql-server) and [SQL Server Management Studio](https://learn.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) if needed.
+2. Clone or download this repository.
+3. Open `Assignment1.sql` in SSMS.
+4. Execute the script using a SQL Server connection with permission to create a database. The script creates and selects a database named `Assignment`, creates the tables, inserts sample records, and runs the queries.
+5. Review the result grids for each query.
 
-✔️ RANK() & DENSE_RANK()
+> **Note:** The script creates a database called `Assignment`. If that name is already in use, change the database name near the top of the script before running it. Run this script only in a development or learning SQL Server environment.
 
-✔️ LAG() & LEAD()
+## Repository Contents
 
-✔️ Running Totals & Analytical Queries
+| File | Purpose |
+|---|---|
+| `Assignment1.sql` | Database setup, sample records, and SQL queries |
+| `SQL Mini Project.pdf` | Project write-up |
 
----
+## Data Note
 
-## 📊 Business Insights Generated
-- Customer account analysis
-- Top account holders identification
-- Transaction summary reporting
-- Loan analysis and tracking
-- Customer ranking based on balances
-- Transaction trend analysis
-- Running balance calculations
+This repository contains sample records intended for a learning project. It is not a production banking database and should not be used for real financial decisions.
 
----
+## Skills Highlighted
 
-## 🚀 Project Highlights
-- Designed a relational banking database structure
-- Developed 17 SQL queries for business problem-solving
-- Implemented advanced analytical SQL functions
-- Generated actionable insights from structured data
-- Demonstrated practical database and analytics skills
+**SQL · Relational Data · Data Analysis · Business Reporting · Query Design · Analytical Thinking**
 
----
+## Author
 
-## 📈 Skills Showcased
-**SQL • Data Analysis • Database Management • Business Intelligence • Problem Solving • Analytical Thinking**
-
----
-
-## 👨‍💻 Author
-**Yash**
-
-Aspiring Data Analyst | SQL Enthusiast | Generative AI Learner
-
-🔗 Open to opportunities in **Data Analytics, Business Intelligence, SQL Development, and Data Science**
+**Yash Takalkar**  
+[LinkedIn](https://www.linkedin.com/in/yash-takalkar-5a364a284/) · [GitHub](https://github.com/Yash-0608)
